@@ -4,6 +4,8 @@ Basic webpack setup for kicking off development quickly.
 
 To get started:
 
-`yarn`
+Run `yarn`.
 
-`npm run dev`
+Then fire up the dev server: `npm run dev`.
+
+JS will be Babel'd and Sass will be compiled and PostCSS'd.
