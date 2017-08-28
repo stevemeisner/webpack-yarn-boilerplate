@@ -2,10 +2,10 @@ module.exports = {
   plugins: {
     'postcss-import': {},
     'postcss-cssnext': {
-      browsers: ['last 3 versions', '> 5%'],
+      browsers: ['last 5 versions', '> 5%'],
     },
-    autoprefixer: {},
     cssnano: {
+      autoprefixer: false,
       filterPlugins: false,
       discardComments: {
         removeAll: true,

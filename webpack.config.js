@@ -1,4 +1,5 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 const path = require('path');
 const webpack = require('webpack');
@@ -33,8 +34,8 @@ module.exports = {
           fallback: 'style-loader',
           use: [
             { loader: 'css-loader', options: { importLoaders: 1, sourceMap: true } },
-            'postcss-loader',
-            { loader: 'sass-loader', options: {} },
+            { loader: 'postcss-loader', options: { sourceMap: true } },
+            { loader: 'sass-loader', options: { sourceMap: true } },
           ],
         }),
       },
@@ -52,6 +53,11 @@ module.exports = {
     new ExtractTextPlugin({
       filename: '[name].bundle.css',
       allChunks: true,
+    }),
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 3000,
+      proxy: 'http://localhost:8080/',
     }),
   ],
 };

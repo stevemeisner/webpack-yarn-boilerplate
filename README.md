@@ -14,4 +14,4 @@ Edit the following files to tune this jump starter for your needs:
 
 Run `yarn`.
 
-Then fire up the dev server: `npm run dev`.
+Then fire up the dev server: `npm start`.
