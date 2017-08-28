@@ -33,8 +33,11 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            { loader: 'css-loader', options: { importLoaders: 1, sourceMap: true } },
-            { loader: 'postcss-loader', options: { sourceMap: true } },
+            {
+              loader: 'css-loader',
+              options: { autoprefixer: true, sourceMap: true, importLoaders: 1 },
+            },
+            { loader: 'postcss-loader', options: { sourceMap: 'inline' } },
             { loader: 'sass-loader', options: { sourceMap: true } },
           ],
         }),

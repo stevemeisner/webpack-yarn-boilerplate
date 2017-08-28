@@ -27,6 +27,6 @@
 	},
 	"scripts": {
 		"dev": "webpack-dev-server --inline --hot",
-		"start": "webpack -p && npm run dev"
+		"start": "webpack && npm run dev"
 	}
 }
