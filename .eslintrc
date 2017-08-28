@@ -1,0 +1,11 @@
+{
+  "extends": "airbnb-base",
+  "globals": {
+    "document": true,
+    "window": true,
+    "classes": true,
+  },
+  "rules": {
+    "no-unused-expressions": ["error", { "allowTernary": true }]
+  }
+}

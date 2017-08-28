@@ -1,0 +1,29 @@
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# SublimeText project files
+*.sublime-workspace
+
+*.sassc
+.sass-cache
+/log/*
+/tmp/*
+/inc-replaced/*
+**.orig
+.project
+node_modules
+dist
+*.css
+*.map
+*.swp
+yarn.lock
