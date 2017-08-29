@@ -26,7 +26,8 @@
 		"d3": "3.5.17"
 	},
 	"scripts": {
-		"dev": "webpack-dev-server --inline --hot",
-		"start": "webpack && npm run dev"
+		"dev": "webpack-dev-server --progress --colors --hot",
+		"start": "webpack && npm run dev",
+		"bundle": "NODE_ENV=production webpack -p"
 	}
 }
